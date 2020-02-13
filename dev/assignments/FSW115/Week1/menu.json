@@ -1,0 +1,227 @@
+{
+    "appetizers": [
+        {
+            "name": "Cheese Curds",
+            "ingredients": ["Cheese", "Breading"],
+            "desciption": "Cheese Curds from Wis. in beer batter deep fried",
+            "distributor": {
+                "name": "Mullens Cheese",
+                "address": "Blanket Ave",
+                "city": "Wausau"
+            },
+            "servingCost": {
+                "ourPrice": 2.50,
+                "customerPrice": 8
+            }
+        },
+        {
+            "name": "Nachos",
+            "ingredients": ["Tortilla chips", "taco meat", "melted cheese", "black olives"],
+            "desciption": "Tortilla chips topped with some goodeness",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 2,
+                "customerPrice": 8
+            }
+        },
+        {
+            "name": "Home Made Chips",
+            "ingredients": ["Potato", "Seasoning"],
+            "desciption": "Idaho potatos thin sliced and deep fried with our own seasoning",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 0.50,
+                "customerPrice": 5
+            }
+            
+        }
+    ],
+    "coldSandwiches": [
+        {
+            "name": "Turkey Club",
+            "ingredients": ["Sliced Turkey", "Toasted Bread","Mayo", "Bacon","Lettuce"],
+            "desciption": "Sliced turkey on a toastd Bread",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 3,
+                "customerPrice": 9
+            }
+        },
+        {
+            "name": "Tuna Salad",
+            "ingredients": ["Toasted Bread", "Tuna", "Mayo", "Lettuce"],
+            "desciption": "Tuna salad on a Toasted Bread",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 1,
+                "customerPrice": 7
+            }
+        },
+        {
+            "name": "The Combo",
+            "ingredients": ["Sliced turkey", "Bacon", "Sliced ham", "cheese", "Toasted Bun"],
+            "desciption": "Sliced turkey, ham and bacon with cheese on a toasted Bun",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 3,
+                "customerPrice": 9
+            }
+            
+        }
+    ],
+    "hotSandwiches": [
+        {
+            "name": "Ham N Cheese",
+            "ingredients": ["Bread", "Ham", "Cheese"],
+            "desciption": "Grilled Ham and cheese",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 3,
+                "customerPrice": 9
+            }
+        },
+        {
+            "name": "Italian Sausage",
+            "ingredients": ["Hogie Bun", "Italian Sausage", "Aujus", "choice of peppers"],
+            "desciption": "Italian Sausage on a hogie Bun",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 2,
+                "customerPrice": 11
+            }
+        },
+        {
+            "name": "The Combo",
+            "ingredients": ["Sliced beef", "Hogie Bun", "Italian Sausage", "Aujus", "choice of peppers"],
+            "desciption": "Italian Beef and Sausage on a hogie bun",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 3.50,
+                "customerPrice": 12
+            }
+            
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Pumpkin Pie",
+            "ingredients": ["Pumpkin", "Pie Crust"],
+            "desciption": "Homade Pumpkin Pie",
+            "distributor": {
+                "name": "Desert People",
+                "address": "654 Pie Street",
+                "city": "PieVille"
+            },
+            "servingCost": {
+                "ourPrice": 1,
+                "customerPrice": 4
+            }
+        },
+        {
+            "name": "Cherry Pie",
+            "ingredients": ["Cherry Filling", "Pie Crust"],
+            "desciption": "Homade Cherry Pie",
+            "distributor": {
+                "name": "Desert People",
+                "address": "654 Pie Street",
+                "city": "PieVille"
+            },
+            "servingCost": {
+                "ourPrice": 1,
+                "customerPrice": 4
+            }
+        },
+        {
+            "name": "Bread Pudding",
+            "ingredients": ["Bread", "eggs", "vanilla extract", "sugar", "Carmel Sauce"], 
+            "desciption": "Homade Bread pudding with carmel sauce",
+            "distributor": {
+                "name": "Desert People",
+                "address": "654 Pie Street",
+                "city": "PieVille"
+            },
+            "servingCost": {
+                "ourPrice": 1,
+                "customerPrice": 5
+            }
+            
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Coffee",
+            "ingredients": ["Coffee Beans", "water"],
+            "desciption": "Fresh Roasted cup of Coffee",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 0.04,
+                "customerPrice": 1.5
+            }
+        },
+        {
+            "name": "Ice tea",
+            "ingredients": ["Tea", "water"],
+            "desciption": "Frsh made Ice tea",
+            "distributor": {
+                "name": "Fehr Foods",
+                "address": "124 Arthur street",
+                "city": "Gleason"
+            },
+            "servingCost": {
+                "ourPrice": 0.10,
+                "customerPrice": 2
+            }
+        },
+        {
+            "name": "Coke",
+            "ingredients": ["Coke syrup", "water"], 
+            "desciption": "Cold Texas Coke",
+            "distributor": {
+                "name": "Texas Coke",
+                "address": "555 Pepsi street",
+                "city": "CokeVille"
+            },
+            "servingCost": {
+                "ourPrice": 0.03,
+                "customerPrice": 2
+            }
+            
+        }
+    ]
+}
