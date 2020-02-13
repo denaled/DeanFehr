@@ -1,0 +1,92 @@
+html,body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+#header{
+    background-color: grey;
+    color: honeydew;
+    border-radius: 5px;
+}
+#sidebar1{
+    background-color: rgb(65, 63, 63);
+    color: honeydew;
+    border-radius: 5px;
+}
+#content{
+    background-color: dimgray;
+    color: honeydew;
+    border-radius: 5px;
+}
+#sidebar2{
+    background-color: lightgray;
+    color: rgb(65, 63, 63);
+    border-radius: 5px;
+}
+#footer{
+    background-color: grey;
+    color: honeydew;
+    border-radius: 5px;
+}
+/*make Grids for Phone Tablelt and Laptop screens */
+/* Phone Grid*/
+@media only screen and (max-width: 600px){
+    #GridContainer{
+        display:grid;
+        grid-template-areas: 
+        'header'
+        'sidebar1'
+        'content'
+        'sidebar2'
+        'footer';
+        grid-gap: 10px;
+    }
+     /*end container*/
+     
+}
+/*Tablet Grid*/
+@media only screen and (min-width: 600px){
+    #GridContainer{
+        display:grid;
+        grid-template-areas:
+        'header header'
+        'sidebar1 content'
+        'sidebar2 sidebar2'
+        'footer footer';
+        grid-gap: 10px;
+        
+    }
+     /*end container*/
+     
+}
+/* Laptop Grid*/
+@media only screen and (min-width: 992px){
+    #GridContainer{
+        display: grid;
+        grid-template-areas: 
+        'header header header'
+        'sidebar1 content sidebar2'
+        'footer footer footer';
+        grid-gap: 10px;   
+    }
+    /*end container*/
+   
+}
+/* had below layout below each Grid Container, but found that I could have it here and is less code .. more streamlined*/
+.header{
+    grid-area: header;
+}
+.sidebar1{
+    grid-area: sidebar1;
+}
+.content{
+    grid-area: content;
+}
+.sidebar2{
+    grid-area: sidebar2;
+}
+.footer{
+    grid-area: footer;
+}
+
+

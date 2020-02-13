@@ -1,0 +1,110 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.Nav{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: dimgray;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    
+}
+.Nav>li {
+    float: left;
+    background-color: rgb(85, 82, 82);
+    
+}
+.Nav>li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    text-decoration: none;
+
+}
+.Nav>li>a:hover{
+    background-color: tomato;
+}
+
+.Blog1{
+    margin: 55px 15px 150px 15px;
+position: relative;
+text-align: center;
+
+}
+
+
+.Blog2{
+    margin: 10px 15px 200px 15px;
+    position: relative;
+    text-align: center;
+}
+.Blog1>img{
+    width: 200px;
+    padding: 10px;
+    float: left;
+    
+    
+}
+.Blog2>img{
+    width: 200px;
+    padding: 10px;
+    float: right;
+
+
+}
+.Post-Info {
+    color: dimgray;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.GridContainer{
+    display: grid;
+    margin: 10% 10%;
+    grid-template-rows: 100% 100% 100% 100% 55px;
+    grid-gap: 10px;
+}
+
+#Pink1{
+    background-color:#F5C6D6 ;
+   
+}
+#Pink2{
+    background-color: #EE2E84;
+    
+}
+#Blue{
+    background-color: #85CFD8;
+}
+#Green{
+    background-color: #8DC63F;
+}
+#Orange{
+    background-color: #E76E34;
+}
+.Grid1{
+    
+    grid-column:1/5;
+}
+
+.Grid6{
+    grid-column:1/3; 
+}
+.Grid7{
+    grid-column:3/5;  
+}
+.Grid8{
+    grid-column:1/4; 
+}
+

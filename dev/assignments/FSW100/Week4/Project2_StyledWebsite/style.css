@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.MainNav{
+    position: fixed;  /* stay in one spot*/
+    margin: 0;   /* no spaces */
+    padding: 0; /* no odd spaces*/
+    list-style: none; /*takes away the bullets*/
+    top: 0; /* where on the web page: very top no spaces*/
+    z-index: 1; /* pulls to front of page*/
+    
+}
+.MainNav>li {
+    float: left; /* makes list into a bar look*/
+    background-color: rgb(71, 70, 70); /* sets background color of nav bar*/
+}
+.MainNav>li>a {
+    display: block;
+    color: greenyellow;/*text color*/
+    border-color: hotpink; 
+    padding: 10px 15px;  /*how wide and space between Nav text*/
+    text-align: center; /* align text center*/
+    text-decoration: none; /* gets rid of the link line*/
+}
+.MainNav>li>a:hover{
+    color: honeydew;
+}
+
+h1{
+    text-align: center;
+    font-family: 'McLaren', cursive;
+    text-shadow: 2px 2px 5px greenyellow;
+}
+.RatesTable{
+    margin: 55px 15px 150px 15px; /* Adjusting down in case I want to add stuff across*/
+    position: sticky; /* Position Sticky so it stays with page*/
+    float: right;
+    text-align: center;/* align text in table */
+    border: 1px solid black;
+}
+#RateHeader{
+font-family: cursive;
+font-size: 30px;
+}
+.RatesTable th{
+    text-decoration: underline;
+}
+#Column1{
+    font-weight: bold;
+}
+
+#Section1{
+    float: left;
+}
+#Section2{
+    float: right;
+}
+.Section1{
+    position: relative;
+    width: 40%;
+    padding: 5px;
+    height: 10%;
+    text-align: center;
+}
+
+.Section1 img{
+    max-width: 40%;
+    padding: 5px;
+    height: auto;
+    float: left;
+}
+.Section1 p{ 
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+}
+
+
+.Section2{
+    position: relative;
+    width: 30%;
+    padding: 5px;
+    height: 10%;
+    text-align: center;
+}
+.Section2 img{
+    max-width: 50%;
+    height: auto;    
+}
+.Section2 h3{
+    text-shadow: 2px 2px 5px red;
+}
+.Section2 p{
+    font-family: 'McLaren', cursive;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

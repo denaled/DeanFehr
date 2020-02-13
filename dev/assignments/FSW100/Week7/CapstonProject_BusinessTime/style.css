@@ -1,0 +1,277 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/*Phone Grid*/
+@media only screen and (max-width:600px){
+    #GridContainer{
+        display: grid;
+        grid-column: 1fr;
+        grid-template-rows: 25px 150px 1fr 1fr 1fr 30px;
+        grid-template-areas:
+        'n'
+        'h'
+        'a1'
+        'm'
+        'a2'
+        'f';
+        
+    }
+    #header>img{
+        width: 25%;
+    }
+    #header>.Logo{
+        width: 50%;
+    }
+}
+/*Tablet Grid*/
+@media only screen and (min-width:600px){
+    #GridContainer{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 500px;
+        grid-template-rows: 25px 150px 1fr 1fr 30px;
+        grid-template-areas:
+        'n n'
+        'h h'
+        'm a1'
+        'a2 a2'
+        'f f';
+    }
+    #header>img{
+        width: 25%;
+        border: 5px solid white;
+    }
+    #header>.Logo{
+        width: 50%;
+    }
+}
+/*Desktop Grid*/
+@media only screen and (min-width:922px){
+    #GridContainer{
+        display: grid;
+        grid-template-columns: 700px 1fr 700px;
+        grid-template-rows: 25px 150px 1fr 30px;
+        grid-template-areas:
+        'n n n'
+        'h h h'
+        'a1 m a2'
+        'f f f';
+    }
+    #header>img{
+        width: 10%;
+        border: 5px solid white;
+    }
+    #header>.Logo{
+        width: 500px;
+    }
+}
+/****************************************/
+/******* Index or Main Page *************/
+/****************************************/
+#nav{
+    grid-area: n; 
+}
+.nav{
+    list-style-type: none;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    display: flex;font-family: 'Permanent Marker', cursive
+   
+}
+.nav>li>a{
+    padding: 10px;  
+    color: white;
+    text-decoration: none;
+}
+.nav>li>a:hover{
+    color: crimson;
+}
+#header{
+    grid-area: h;
+    width: 100%; 
+    display: flex;
+    background-color: darkblue;
+    justify-content: space-evenly
+   
+}
+
+#aside1{
+    margin: 10% 5% 0 5%;
+    
+    grid-area: a1;
+    text-align: center;
+}
+#aside1>.Aside1Img{
+    display: flex;
+    
+}
+#aside1>.Aside1Img>img{
+   width:500px ; 
+}
+#main{
+    grid-area: m;
+    margin: 10% 5% 0 5%;
+    
+}
+.IndexMain{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.IndexMain>.MainImg{
+    display: flex;
+    justify-content: center;
+    
+}
+.IndexMain>.MainImg>img{
+    width: 500px;
+}
+#aside2{
+    grid-area: a2;
+    margin: 10% 5% 0 5%;
+    text-align: left;
+    font-size: 25px;
+}
+#footer{
+    grid-area: f;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color:darkblue;
+    color: white;
+}
+.footer{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/****************************************/
+/********* Rates Page *******************/
+/****************************************/
+.Daily{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:mediumblue;
+    border:10px solid mediumblue;
+    margin: 10% 2%;
+}
+.Daily>p{
+    background-color:white;
+    color:mediumblue;
+    font-size: 25px;  
+}
+.DailyRates{
+    background-color: darkblue;
+    font-size: 55px;
+    color: orange;
+    border: 10px solid;
+}
+.Weekly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    border:10px solid darkblue;
+    margin: 10% 2%;
+}
+.Weekly>p{
+    background-color:white;
+    color:darkblue;
+    font-size: 25px;
+}
+.WeeklyRates{
+    background-color: darkblue;
+    font-size: 55px;
+    color: white;
+    border: 10px solid;
+}
+.Weekly>.CancelPolicy{
+  color: yellow; 
+  text-align:left;
+  font-size: 20px;
+}
+.Monthly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumblue;
+    border:10px solid mediumblue;
+    margin: 10% 2%;
+}
+.Monthly>p{
+    background-color:white;
+    color:darkblue;
+    font-size: 25px;
+     
+ }
+.MonthlyRates{
+    background-color: darkblue;
+    font-size: 55px;
+    color: orange;
+    border: 10px solid;
+}
+/****************************************/
+/******** Reservation Page **************/
+/****************************************/
+.ReserveMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+.ReserveMain>img{
+    width: 25%;
+    height: 25%;
+    transition: width ease-out 3s, height ease-out 2s;
+}
+.ReserveMain>img:hover{
+    width: 125%;
+    height: 125%;
+}
+/****************************************/
+/********** Contact US Page**************/
+/****************************************/
+.ContactA1{
+    display: flex;  
+}
+.ContactA1>img{
+    width: 100%;
+}
+.ContactMain{
+    display: flex;
+    background-color: burlywood;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+}
+.ContactMain>.address{
+    text-align: center;
+}
+.ContactMain>.Phone{
+    text-align: center;
+}
+.ContactMain>.Hours{
+    text-align: center;
+}
+.ContactA2{
+    display: flex;
+}
+.ContactA2>img{
+    width: 100%;
+}
+/****************************************/
+/****************************************/
+/****************************************/
