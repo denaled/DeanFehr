@@ -11732,10 +11732,11 @@ const cubsAPI = [
 
 for (let i = 0; i < cubsAPI.length; i++) {
   if (cubsAPI[i].Status === "Active" && cubsAPI[i].PositionCategory === "P") {
-    let mainContainer = document.getElementById("container-fluid");
+    let mainContainer = document.getElementById("mainDiv");
     // console.log(cubsAPI.length)
     let rowDiv = document.createElement("div");
     rowDiv.setAttribute("class", "row");
+    rowDiv.setAttribute("id", "mainRow");
     let colDiv = document.createElement("div");
     colDiv.setAttribute("class", "col-xs-12 col-md-6");
     let listDiv = document.createElement("div");
@@ -11754,46 +11755,72 @@ for (let i = 0; i < cubsAPI.length; i++) {
   }
 }
 
-// for (let i = 0; i < cubsAPI.length ; i++){
-//     if (cubsAPI[i].Status === 'Active' && cubsAPI[i].PositionCategory === 'P'){
-//         let pitcher = document.createElement('h1')
-//         pitcher.textContent = 'Name: ' + cubsAPI[i].FirstName + ' ' + cubsAPI[i].LastName
-//         let position =document.createElement('h2')
-//         position.textContent = 'Postion: ' + cubsAPI[i].Position
-//         pitcher.setAttribute('id', cubsAPI[i].Position)
-//         document.body.append(pitcher)
-//         document.body.append(position)
-//         console.log(cubsAPI[i].FirstName)
-//         // document.getElementById('pitcherName').textContent = 'Name: ' + cubsAPI[i].FirstName + ' ' + cubsAPI[i].LastName
-//         // document.getElementById('position').textContent = 'Postion: ' + cubsAPI[i].Position
-//     }
-// }
-// Display pitchers using bootstrap to make it look pretty... using my test.html as a guide of what I wanted
-// below code was my start... but have issues with trying to get element with CLASS... so just one column
-// function makeListPretty (dataArr){
-//     //var/let that will need to make coding easier
-//     let mainContainer = document.getElementsByClassName('container-fluid')
-//     let rowDiv = document.createElement('div')
-//     let colDiv = document.createElement('div')
-//     colDiv.setAttribute('class', 'col-xs-12 col-md-6')
-//     let listDiv = document.createElement('div')
-//     listDiv.setAttribute('class', 'list-group')
-//     let listItemActive = document.createElement('a')
-//     listItemActive.setAttribute('class', 'list-group-item active')
-//     listItemActive.textContent = "testing"
+console.log("test");
 
-//     document.mainContainer.append(rowDiv)
-//     document.mainContainer.append(colDiv)
-//     document.mainContainer.append(listDiv)
-//     document.mainContainer.append(listItemActive)
+let pageDocument = document
+makeItPretty(cubsAPI,pageDocument)
 
-//     // every time there is 2 pitchers create a new row
-// //assign let/var to make new elements
-// //assign correct class for bootstrap to reconize
-//     for (let i = 0; i < dataArr.length ; i++){
-//         if (dataArr[i].Status === 'Active' && dataArr[i].PositionCategory === 'P'){
 
-//         }
-//     }
+function makeItPretty(dataArr, document) {
+  let colCount = 10;
 
-// }
+  // let mainContainer = document.getElementById("mainDiv")
+  // console.log("to here")
+  // let rowDiv = document.createElement("div");
+  // rowDiv.setAttribute("class", "row");
+  // //rowDiv.setAttribute("id", colCount);
+  // let colDiv = document.createElement("div");
+  // colDiv.setAttribute("class", "col-xs-12 col-md-6");
+  // let listDiv = document.createElement("div");
+  // listDiv.setAttribute("class", "list-group");
+  // let listItemActive = document.createElement("a");
+  // listItemActive.setAttribute("class", "list-group-item active");
+  // let listItem1 = document.createElement("a");
+  // listItem1.setAttribute("class", "list-group-item");
+
+  for (let i = 0; i < dataArr.length; i++) {
+    console.log(dataArr[i].Status);
+    
+    //rowDiv.setAttribute("id", colCount);
+    if (dataArr[i].Status === "Active" && dataArr[i].PositionCategory === "P") {
+      console.log("to here")
+      let mainContainer = document.getElementById('mainDiv')
+      console.log(" but not to to here")
+      let rowDiv = window.document.createElement("div");
+      rowDiv.setAttribute("class", "row");
+      //rowDiv.setAttribute("id", colCount);
+      let colDiv = document.createElement("div");
+      colDiv.setAttribute("class", "col-xs-12 col-md-6");
+      let listDiv = document.createElement("div");
+      listDiv.setAttribute("class", "list-group");
+      let listItemActive = document.createElement("a");
+      listItemActive.setAttribute("class", "list-group-item active");
+      let listItem1 = document.createElement("a");
+      listItem1.setAttribute("class", "list-group-item");
+      if (colCount % 2 === 0) {
+        listItemActive.textContent =
+          "Name: " + dataArr[i].FirstName + " " + dataArr[i].LastName;
+        listItem1.textContent = "Postion: " + dataArr[i].Position;
+        mainContainer.appendChild(rowDiv);
+        mainContainer.appendChild(colDiv);
+        mainContainer.appendChild(listDiv);
+        mainContainer.appendChild(listItemActive);
+        mainContainer.appendChild(listItem1);
+      } else {
+        let newRow = document.getElementById(colCount);
+        listItemActive.textContent =
+          "Name: " + dataArr[i].FirstName + " " + dataArr[i].LastName;
+        listItem1.textContent = "Postion: " + dataArr[i].Position;
+        newRow.appendChild(colDiv);
+        newRow.appendChild(listDiv);
+        newRow.appendChild(listItemActive);
+        newRow.appendChild(listItem1);
+      }
+    }
+    colCount++;
+  }
+}
+
+
+
+

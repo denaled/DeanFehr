@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+.mainHeader{
+    text-align: center;
+}
+.pokePic{
+ justify-content: center;
+    
+}
+
+div{
+    
+    background-color: burlywood;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    
+}
+
+
+.pokeName{
+   align-items: center;
+    text-transform: capitalize;
+    
+}
