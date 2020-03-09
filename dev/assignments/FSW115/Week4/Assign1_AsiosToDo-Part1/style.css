@@ -69,7 +69,7 @@ ul {
   }
   
   /* Add a "checked" mark when clicked on */
-  ul li.checked::before {
+  /* ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -80,5 +80,5 @@ ul {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  }
+  } */
     
