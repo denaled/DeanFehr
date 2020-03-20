@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+.mainHeader{
+    text-align: center;
+}
+.worldName{
+ justify-content: center;
+    
+}
+
+div{
+    
+    background-color: burlywood;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    
+}
+
+
+.speciesName{
+   align-items: center;
+    text-transform: capitalize;
+    
+}
