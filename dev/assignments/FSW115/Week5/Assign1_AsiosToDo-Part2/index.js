@@ -89,14 +89,14 @@ function  createTaskElement(addToLists){
 function deleteAction(buttonID){
     //this.style.display = "none"
    //this.parentNode.parentNode.removeChild(this.parentNode)
-   console.log(buttonID.id)
+   //console.log(buttonID.id)
    axios.delete("https://api.vschool.io/dean/todo/"+buttonID.id)
     .then(response => location.reload())
     .catch(error => console.log(error))
    
 }
 function clickedTask(){
-    console.log(this.classList.toggle)
+    //console.log(this.classList.toggle)
 this.classList.toggle("checked")
 }
 

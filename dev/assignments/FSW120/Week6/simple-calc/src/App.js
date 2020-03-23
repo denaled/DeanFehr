@@ -4,9 +4,12 @@ import React, { useState } from "react";
 // import OperandDropDown from "./components/OperandDropDown";
 // import SubmitButton from "./components/SubmitButton";
 import Answer from "./components/Answer";
+import DoMath from './components/DoMath'
 // import StoreThis from "./components/StoreThis";
 // import Display from "./components/Display";
 // import KeyCaps from "./components/KeyCaps";
+
+const MathContext = React.createContext()
 
 function App() {
   const [num1, setNum1] = useState(0);
@@ -22,9 +25,15 @@ function App() {
       case 'sub': return  setAnswerValue(+num1 - +num2)
       case 'multiply':return  setAnswerValue(+num1 * +num2)
       case 'divide': return  setAnswerValue(+num1 / +num2)  
-    }
-    
+    } 
   }
+
+  
+
+  const displayAnswer=(passedAnswer)=>{
+    setAnswerValue(passedAnswer)
+  }
+
 
   return (
     <div>
@@ -33,9 +42,10 @@ function App() {
           type="number"
           name="num1"
           onChange={e => setNum1(e.target.value)}
+          
         ></input>
 
-        <select value={operand} onChange={e => setOperand(e.target.value)}>
+        <select value={operand} onChange={e => setOperand(e.target.value)} >
           <option value="add">Add</option>
           <option value="sub">Subtract</option>
           <option value="multiply">Multiply</option>
@@ -46,12 +56,20 @@ function App() {
           type="number"
           name="num2"
           onChange={e => setNum2(e.target.value)}
+          
         ></input>
-      <input type="button" value="=" onClick={handleSubmit} />
+      <input type="button" value="=" onClick={handleSubmit}  />
       <Answer
         answerValue={" " + num1 + " ----- " + operand + " ----- " + num2 + " equals " + answerValue}
       ></Answer>
+      {/* <MathContext.Provider
+    value={
+      operand
+    }
+    >
+    </MathContext.Provider> */}
     </div>
+    
   );
 }
 // const firstRowKeyCaps = ['7','8','9','/']

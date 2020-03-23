@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}  
+    #header{
+        grid-area: h;
+        width: 100%; 
+        text-align: center;
+        background-color: darkolivegreen;
+        color:black;
+        justify-content: center;
+    }
+   
+    input[type=text] {
+      margin: 0;
+      border-radius: 0;
+      width: 50%;
+      padding: 10px;
+      float: left;
+      font-size: 16px;
+    }
+    #button1{
+        background-color: darkolivegreen;
+        border: none;
+        color: white;
+        padding: 10px 22px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: whitesmoke;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items different color */
+  ul li:nth-child(odd) {
+    background: lightgray;
+  }
+  
+  /* -color on hover */
+  ul li:hover {
+    background: gray;
+  }
+  
+  /*  strike out text */
+  ul li.checked {
+    background: olive;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+  
+ 
+    
