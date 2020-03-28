@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import {MyContext} from './myContext'
 
 const Answer = (props) =>{
+    const context =useContext(MyContext)
     return(
-    <p>Answer-->{props.answerValue}</p>
+        <div>
+    <p>Answer : {props.answerValue}</p>
+    <p>{context.answerTest}</p>
+    </div>
     )
 }
 

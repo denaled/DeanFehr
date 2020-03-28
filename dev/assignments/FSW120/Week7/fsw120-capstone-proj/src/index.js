@@ -5,10 +5,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { MyContextProvider } from "./components/myContext";
 
+
 ReactDOM.render(
-  <MyContextProvider>
+ <MyContextProvider>
     <App />
-  </MyContextProvider>,
+    </MyContextProvider>,
   document.getElementById("root")
 );
 
