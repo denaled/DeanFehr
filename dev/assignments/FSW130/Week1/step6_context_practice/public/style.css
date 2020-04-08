@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    margin: 10px;
+}
+
+.Dark-theme {
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+.Light-theme {
+    background-color: whitesmoke;
+    color: #333333;
+}
+.Green-theme {
+    background-color:green;
+    color: tomato;
+}
+.Dark-Change-theme {
+    background-color: #333333;
+    color:tomato;
+    margin-top: 100px;
+    display: flex;
+}
+
+li {
+    padding: 10px 20px;
+    display: inline;
+    
+}
+
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navBar {
+    width: 100%;
+    background-color: #111;
+    color: whitesmoke;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: whitesmoke;
+    text-align: center;
+}
+
