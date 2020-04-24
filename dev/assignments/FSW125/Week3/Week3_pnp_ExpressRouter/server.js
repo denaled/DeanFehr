@@ -13,6 +13,7 @@ const bountys =[
     BountyAmount: 25,
     Type: "Sith",
     _id: uuid.v4()},
+    
     {FirstName:"Larry",
     LastName: "Smith",
     Living: true,
@@ -27,12 +28,13 @@ app.get("/bountys", (req,res)=>{
 })
 
 app.post("/bountys", (req,res)=>{
+    console.log(req)
     const newBounty = req.body
-    newBounty._id = uuid.v4()
+   newBounty._id = uuid.v4()
     bountys.push(newBounty)
-    res.send(`Awesome, you just added ${newBountys.FirstName} to the bountys array (DB)`)
+    res.send(`Awesome, you just added ${newBounty.FirstName} to the bountys array (DB)`)
 })
 
 app.listen(8585,()=>{
-    console.log("Bounty server running on port 8585")
+    //console.log("Bounty server running on port 8585")
 })
