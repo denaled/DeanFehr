@@ -1,0 +1,57 @@
+body{
+    /* background-image: url("./images/bounty.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+    
+    background-color: brown;
+    
+}
+body::after{
+    
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  }
+
+form{
+    width: 600px;
+    border:1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+input{
+    padding:10px;
+    font-size: larger;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 5px;
+}
+button{
+    padding: 5px;
+    border-radius: 4px;
+    font-size: larger;
+}
+.mainHead{
+    text-align: center;
+    background-color: brown;
+    color: burlywood;
+}
+.bountyMain{
+    width: 600px;
+    border: 3px solid tomato;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+}
+.bountyHead{
+    background-color: tomato;
+}
+.moneyLabel{
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
