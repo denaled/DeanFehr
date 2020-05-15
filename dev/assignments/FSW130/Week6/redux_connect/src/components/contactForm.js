@@ -2,9 +2,9 @@ import React , {useState}from 'react'
 
 function ContactForm (props){
     const initInputs = {
-        Name: props.Name || "", 
-        Phone: props.Phone || "",
-        Email: props.Email || ""
+        name: props.name || "", 
+        phone: props.phone || "",
+        email: props.email || ""
     }
     const [inputs, setInputs] = useState(initInputs)
 
@@ -15,22 +15,42 @@ function ContactForm (props){
     }
    function handleSubmit(e){
        e.preventDefault()
+       props.submit(inputs)
+       console.log(" I am in handle Submit")
+       console.log(inputs)
+       setInputs(initInputs)
 
    }
     return(
-        <div>
+        <form onSubmit={handleSubmit} className="contactForm">
             <label>Name:
-            <input type='text'></input>
+            <input 
+            type='text'
+            name= "name"
+            value={inputs.name}
+            onChange={handlechange}
+            ></input>
             </label>
             <br/>
             <label>Phone:
-            <input type='text' ></input>
+            <input 
+            type='text'
+            name= "phone"
+            value={inputs.phone}
+            onChange={handlechange}
+             ></input>
             </label>
             <br/>
             <label>Email:
-            <input type='text'></input>
+            <input 
+            type='text'
+            name= "email"
+            value={inputs.email}
+            onChange={handlechange}
+            ></input>
             </label>
-        </div>
+            <button >{props.btnText}</button>
+        </form>
     )
 }
 export default ContactForm

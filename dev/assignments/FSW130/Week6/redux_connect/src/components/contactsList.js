@@ -4,9 +4,10 @@ import React from 'react'
 function ContactList (props){
     const  contacts = props.sendContacts
     const listContacts = contacts.map((contact)=>
-    <div>{contact.name}
+    <div key={contact.name}>{contact.name}
     <li >{contact.phone}</li>
     <li >{contact.email}</li>
+    <button>Delete</button>
     </div>
     )
 
@@ -15,6 +16,7 @@ function ContactList (props){
             <ul>
                 {listContacts}
             </ul>
+            
         </div>
     )
 
