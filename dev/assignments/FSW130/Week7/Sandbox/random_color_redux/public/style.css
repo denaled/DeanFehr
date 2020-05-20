@@ -1,0 +1,13 @@
+.wrapper{
+    position: fixed;
+  top: 50%;
+  right: 50%;
+
+}
+.box{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+    border: 15px solid navy;
+}

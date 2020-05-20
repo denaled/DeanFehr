@@ -20,11 +20,21 @@ class App extends Component {
   }
   
   componentDidMount() {
-    axios.get("https://api.vschool.io/dean/todo").then(response => {
-      const listTweetItems = response.data;
-      console.log(this.state.name)
-      this.setState({ listTweetItems });
+    axios.get("https://swapi.dev/api/films").then(response => {
+      const films = response.data;
+      console.log(films)
+      console.log(films.results[0].title)
+      console.log(films.results[0].producer)
+      console.log(films.results[0].release_date)
+      console.log(films.results[0].episode_id)
+
+      //this.setState({ listTweetItems });
     });
+    // axios.get("https://api.vschool.io/dean/todo").then(response => {
+    //   const listTweetItems = response.data;
+    //   console.log(this.state.name)
+    //   this.setState({ listTweetItems });
+    // });
   }
   
   render() {

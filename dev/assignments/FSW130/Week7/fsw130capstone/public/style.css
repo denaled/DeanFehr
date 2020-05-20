@@ -1,0 +1,13 @@
+.page2{
+    width: auto;
+}
+.page3{
+    width: auto;
+}
+.pageHeader{
+    text-align: center;
+}
+.card{
+   margin: 20px;
+border: 10px solid blue;
+}
