@@ -43,7 +43,7 @@ function CapForm(props) {
         // favTeams: []
         console.log(inputs2.favFootball)
         console.log(inputs.favTeams)
-        
+       
         console.log("I am in Handle Submit on CapForm")
         console.log(inputs)
         // setInterval(()=>{props.submit(inputs, props._id)}, 1)
@@ -51,6 +51,8 @@ function CapForm(props) {
         //setInputs(initInputs)
 
     }
+    
+    
 
   return (
     <div className="capFormDiv" onSubmit={handleSubmit}>
@@ -86,20 +88,20 @@ function CapForm(props) {
             name="favFootball"
             value={inputs.favTeams[0]}
             onChange={handlechange}
-            onBlur = {()=>{setInputs(prevInputs =>({
-                ...prevInputs,
-                favTeams :[inputs2.favFootball, inputs2.favBaseball ]
-            }))}}
+            // onBlur = {()=>{setInputs(prevInputs =>({
+            //     ...prevInputs,
+            //     favTeams :[inputs2.favFootball, inputs2.favBaseball ]
+            // }))}}
             placeholder="Favortie Football Team">
             </input>
             <input
             type="text"
             name="favBaseball"
             value={inputs.favTeams[1]}
-            onBlur = {()=>{setInputs(prevInputs =>({
-                ...prevInputs,
-                favTeams :[inputs2.favFootball, inputs2.favBaseball ]
-            }))}}
+            // onBlur = {()=>{setInputs(prevInputs =>({
+            //     ...prevInputs,
+            //     favTeams :[inputs2.favFootball, inputs2.favBaseball ]
+            // }))}}
             onChange={handlechange}
             placeholder="Favortie Baseball Team">
             </input>
@@ -108,7 +110,10 @@ function CapForm(props) {
             type="number"
             name="hatNum"
             value={inputs.hatNum}
-           
+           onBlur = {()=>{setInputs(prevInputs =>({
+                ...prevInputs,
+                favTeams :[inputs2.favFootball, inputs2.favBaseball ]
+            }))}}
             onChange={handlechange}>
             </input >
             </label>
