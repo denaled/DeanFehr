@@ -1,0 +1,65 @@
+For this assignment, write queries using SQL to acquire data about customers, vendors, products, and employees in a fictitious sales database. These queries will cover many of the core aspects of writing SQL to produce data for reporting and analyzing information. There may be multiple ways to produce the same results, but ensure you are returning the requested fields.
+
+Using the Sales Orders database, complete the queries below. 
+
+1. Display customers who have no sales rep (employees) in the same state.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+2. Display all orders associated with the customers from problem one and put them into a new table named no sales rep.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+3. Assign a sales rep (employee) to each customer that does not have one in the newly created table from problem three.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+4. What is the average quoted price of a helmet?
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+5. What was the date of the earliest ship date?
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+6. What is the total amount (in dollars) of orders from the state of Oregon?
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+7. Show each employee, the employee’s total sales (in dollars), the employee’s total sales item quantity, and the average item a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+8. Create a new table with the following: vendor id, vendor phone number, daysToDeliver, product number, and product name.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+9. Show all current orders whos order total is more than the average order total for all orders.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:

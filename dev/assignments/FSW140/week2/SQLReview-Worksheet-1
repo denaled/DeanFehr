@@ -1,0 +1,74 @@
+For this assignment, write queries using SQL to acquire data about customers, vendors, products, and employees in a fictitious sales database. These queries will cover many of the core aspects of writing SQL to produce data for reporting and analyzing information. There may be multiple ways to produce the same results, but ensure you are returning the requested fields.
+
+Using the Sales Orders database, complete the queries below. 
+
+1. Show all the information on our customers.
+a. Query:
+
+b. Columns: 
+
+c. Expected Rowcount: 
+
+2. Show a list of states, in reverse alphabetical order, where our vendors are located, and include the names of the vendor.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+3. What if we adjusted the retail price of each product by increasing it 7 percent?
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+4. Show a list of orders made by each customer in ascending date order.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+5.Give the names of all vendors based in Albany, Anchorage, and Dallas.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+6. Show an alphabetized list of products with a quantity on hand greater than or equal to 30.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+7. What vendors do we work with that don’t have an email address?
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+8. List employees and the dates their orders shipped sorted by order date.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+9. Show the vendors and products they supply to us for products over $75 for vendors in Texas. 
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
+10. Show employees who live in the same city and state as our vendors.
+a. Query: 
+
+b. Columns: 
+
+c. Expected Rowcount:
+
