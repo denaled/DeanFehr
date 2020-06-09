@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 
-//movie BluePritn
+//Inventory BluePritn
 const inventorySchema = new Schema({
     itemName: {
         type:String,

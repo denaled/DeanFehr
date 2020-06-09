@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(morgan('dev')) 
 
 //Connect to DB
-mongoose.connect('mongodb//localhost:27017/inventoryDB',
+mongoose.connect('mongodb://localhost:27017/inventoryDB',
 {
   useNewUrlParser:true,
   useUnifiedTopology:true,
@@ -19,6 +19,7 @@ mongoose.connect('mongodb//localhost:27017/inventoryDB',
 )
 
 // Routes //
+app.use("/inventory", require("./routes/inventory"))
 
 // Error handler
 app.use((err, req, res, next) => {
