@@ -15,6 +15,11 @@ const rockVoteSchema = new Schema({
     Comment: {
         type:String,
         required: true
+    },
+    user: { // seting up a one to many relation or tieing another table
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required: true
     }
 })
 
