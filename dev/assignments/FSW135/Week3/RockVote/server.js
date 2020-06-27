@@ -1,9 +1,9 @@
-const express = require('express')
-const app = express()
-require('dotenv').config()
-const morgan = require('morgan')
-const mongoose = require('mongoose')
-const expressJwt = require('express-jwt')
+const express = require('express');
+const app = express();
+require('dotenv').config();
+const morgan = require('morgan');
+const mongoose = require('mongoose');
+const expressJwt = require('express-jwt');
 
 //process.env.SECRET
 

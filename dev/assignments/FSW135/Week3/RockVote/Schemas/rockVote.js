@@ -12,7 +12,7 @@ const rockVoteSchema = new Schema({
         type:String,
         required: true
     },
-    Comment: {
+    Comments: {
         type:String,
         required: true
     },

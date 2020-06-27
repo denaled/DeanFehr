@@ -44,8 +44,11 @@ rockVoteRouter.post("/", (req,res,next)=>{
     // console.log(req.user)
     req.body.user = req.user._id
     const newRockVote = new RockVote(req.body)
+    console.log(req.body)
     newRockVote.save((err,savedVote)=>{
         if (err){
+            console.log("INSIDE POST One")
+           
             res.status(500)
             return next(err)
         }
