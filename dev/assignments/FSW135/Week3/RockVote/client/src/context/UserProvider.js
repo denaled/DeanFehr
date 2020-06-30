@@ -21,8 +21,10 @@ export default function UserProvider(props){
   
     function signup(credentials){
       axios.post("/auth/signup", credentials)
+      // Wamt keep the Votes and not alter, So will just be updating user, token with SetState
         .then(res => {
           const { user, token } = res.data
+          //localStorage to help when refresing page
           localStorage.setItem("token", token)
           localStorage.setItem("user", JSON.stringify(user))
           setUserState(prevUserState => ({

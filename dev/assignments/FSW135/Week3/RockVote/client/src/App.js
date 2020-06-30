@@ -18,13 +18,14 @@ export default function App(){
         />
         <Route 
           path="/profile"
-          render={() => <Profile />}
+          render={() => !token ? <Redirect to="/"/> :<Profile />}
         />
         <Route 
           path="/public"
           render={() => <Public />}
         />
       </Switch>
+      
     </div>
   )
 }
