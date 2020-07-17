@@ -1,0 +1,22 @@
+{
+  "name": "FSW125_Capstone_Project",
+  "version": "1.0.0",
+  "description": "Dean Capstone Project Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "react-bootstrap": "^1.0.1",
+    "uuid": "^8.2.0"
+  },
+  "proxy": "http://localhost:8485"
+}

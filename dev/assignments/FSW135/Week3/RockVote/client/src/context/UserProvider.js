@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import Axios from 'axios'
 
 
-const userAxios = axios.create()
+const userAxios = Axios.create()
 
 userAxios.interceptors.request.use(config => {
   const token = localStorage.getItem("token")
@@ -21,7 +21,7 @@ export default function UserProvider(props){
     const [userState, setUserState] = useState(initState)
   
     function signup(credentials){
-      axios.post("/auth/signup", credentials)
+      Axios.post("/auth/signup", credentials)
       // Wamt keep the Votes and not alter, So will just be updating user, token with SetState
         .then(res => {
           const { user, token } = res.data
@@ -38,7 +38,7 @@ export default function UserProvider(props){
     }
   
     function login(credentials){
-      axios.post("/auth/login", credentials)
+      Axios.post("/auth/login", credentials)
         .then(res => {
           const { user, token } = res.data
           localStorage.setItem("token", token)
