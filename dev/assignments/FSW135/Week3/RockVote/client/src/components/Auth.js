@@ -36,6 +36,17 @@ export default function Auth(){
     <div className="auth-container">
       <h1>Rock The Vote</h1>
       { !toggle ?
+      <>
+          <AuthForm 
+            handleChange={handleChange}
+            handleSubmit={handleLogin}
+            inputs={inputs}
+            btnText="Login"
+            errMsg={errMsg}
+          />
+          <p onClick={toggleForm}>Not a member?</p>
+        </>
+        :
         <>
           <AuthForm 
             handleChange={handleChange}
@@ -46,17 +57,8 @@ export default function Auth(){
           />
           <p onClick={toggleForm}>Already a member?</p>
         </>
-      :
-        <>
-          <AuthForm 
-            handleChange={handleChange}
-            handleSubmit={handleLogin}
-            inputs={inputs}
-            btnText="Login"
-            errMsg={errMsg}
-          />
-          <p onClick={toggleForm}>Not a member?</p>
-        </>
+      
+        
       }
     </div>
   )
